@@ -1,0 +1,192 @@
+body {
+background-color: #F0F8FF; /* Light blue */    
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.chart-container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+header {
+  
+    background-color: #333;
+  color: #fff;
+  padding: 15px;
+}
+
+.stat-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-card h2 {
+  margin-bottom: 10px;
+}
+
+.large-number {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.percentage {
+  font-size: 0.8em;
+  color: #333;
+}
+
+.chart-container {
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+a.google-signup {
+    background-color: #4285F4; /* Google brand blue */
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a.google-signup:hover {
+    background-color: #3f7ae0; /* Darker blue on hover */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #090000;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .reservation-form {
+    width: 50%;
+    background-color: #ca4646;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .field {
+    margin-bottom: 15px;
+  }
+  
+  .field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .gallery {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #efefef;
+} 
+    .field {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .field label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      
+      .field input {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      .field input:focus {
+        outline: none;
+        border-color: #333;
+      }
+      
+      .checkbox {
+        display: flex;
+        align-items: center;
+      }
+      
+      .checkbox input {
+        margin-right: 5px;
+      }
+      
+      .checkbox label {
+        font-size: 14px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4285F4;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #3f7ae0;
+      }
+      
+      .forgot-password {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      
+      .forgot-password a {
+        color: #4285F4;
+      }
+  }
+/* Modify CSS for specific chart library in script.js */

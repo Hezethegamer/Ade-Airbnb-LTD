@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html
+ 
+lang="en">
+
+<head>
+
+  
+<meta
+ 
+charset="UTF-8">
+
+  
+<meta
+ 
+name="viewport"
+ 
+content="width=device-width, initial-scale=1.0">
+
+  
+<title>Data Statistics for Ade Airbnb</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+  <header>
+    <h1>Data Statistics for Ade Airbnb</h1>
+  </header>
+  <main>
+    <section class="stat-card">
+      <h2>Visitors for this Month</h2>
+      <p class="large-number">10,257</p>
+      <p class="percentage">↑ 15% from last month</p>
+    </section>
+    <section class="stat-card">
+      <h2>Average Duration spent in each room</h2>
+      <p class="large-number">15:12</p>
+      <p class="percentage">↔ No change from last month</p>
+    </section>
+    <section class="stat-card">
+      <h2>Fire Damages rate</h2>
+      <p class="large-number">3%</p>
+      <p class="percentage">↓ 5% from last month</p>
+    </section>
+    <section class="chart-container">
+      <h2>Popular Pages</h2> 
+      <canvas id="chartCanvas"></canvas>
+    </section>
+  </main>
+  <script src="chart.js"></script>
+  <script>
+    // Data for the pie chart
+    const data = {
+      labels: ["Category 1", "Category 2", "Category 3"],
+      datasets: [{
+        backgroundColor: ["#F7CAC9", "#53777A", "#C02942"],
+        data: [30, 50, 20]
+      }]
+    };
+
+    // Create the pie chart
+    const ctx = document.getElementById("pieChartCanvas").getContext("2d");
+    new Chart(ctx, {
+      type: "pie",
+      data: data,
+      options: {
+        responsive: true,
+        legend: {
+          position: "bottom"
+        }
+      }
+    });
+  </script>
+  <script>
+    // Data for the pie chart
+    const data = {
+      labels: ["Category 1", "Category 2", "Category 3"],
+      datasets: [{
+        backgroundColor: ["#F7CAC9", "#53777A", "#C02942"],
+        data: [30, 50, 20]
+      }]
+    };
+
+    // Create the pie chart
+    const ctx = document.getElementById("pieChartCanvas").getContext("2d");
+    new Chart(ctx, {
+      type: "pie",
+      data: data,
+      options: {
+        responsive: true,
+        legend: {
+          position: "bottom"
+        }
+      }
+    });
+  </script>
+ <!DOCTYPE html>
+
+ <html
+  
+ lang="en">
+ 
+ <head>
+   
+ <meta
+  
+ charset="UTF-8">
+   
+ <meta
+  
+ name="viewport"
+  
+ content="width=device-width, initial-scale=1.0">
+   
+ <title>Book Your Stay</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <header>
+     <h1>Welcome to Ade AirBnB!</h1>
+     <h2>Book Your Perfect Stay</h2>
+   </header>
+   <main>
+     <section class="reservation-form">
+       <h2>Make a Reservation</h2>
+       <form action="/reservation" method="post">
+         <div class="field">
+           <label for="checkin">Check-In Date:</label>
+           <input type="date" id="checkin" name="checkin" required>
+         </div>
+         <div class="field">
+           <label for="checkout">Check-Out Date:</label>
+           <input type="date" id="checkout" name="checkout" required>
+         </div>
+<div class="field">
+<label for="guests">Number of Guests:</label>
+<select
+  
+ id="guests"
+  
+ name="guests">
+             
+ <option
+  
+ value="1">1 Guest</option>
+             
+ <option
+  
+ value="2">2 Guests</option>
+             
+ <option
+  
+ value="3">3 Guests</option>
+             
+ <option
+  
+ value="4+">4+ Guests</option>
+           
+ </select>
+         
+ </div>
+         
+ <div
+  
+ class="field">
+           <label for="roomType">Room Type:</label>
+           <select id="roomType" name="roomType">
+             <option value="standard">Standard Room</option>
+             <option value="deluxe">Deluxe Room</option>
+             <option value="suite">Suite</option>
+           </select>
+         </div>
+         <button type="submit">Book Now</button>
+       </form>
+     </section>
+     <section class="gallery">
+       <h2>Explore Our Rooms</h2>
+       <img src="images/standard-room.jpg" alt="Standard Room image">
+       <img src="images/deluxe-room.jpg" alt="Deluxe Room image">
+       <img src="images/suite-room.jpg" alt="Suite Room image">
+     </section>
+   </main>
+   <footer>
+     
+   </footer>
+ </body>
+ </html> 
+  <a href="https://accounts.google.com/signup?hl=en" class="google-signup">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 480px; height: 360px; margin: 0px; width: 368px;" alt="File:Google &quot;G&quot; logo.svg - Wikimedia Commons" jsname="kn3ccd" aria-hidden="false">
+
+
+    Sign Up with Google
+  </a>
+  <a href="/profile">
+    <button class="profile-button">
+      <img src="images/profile-icon.svg" alt="Profile Icon">
+      <span>My Profile</span>
+    </button>
+  </a>
+        
+  <div
+   
+  class="field">
+          
+  <label
+   
+  for="username">Username:</label>
+          
+  <input
+   
+  type="text"
+   
+  id="username"
+   
+  name="username" required>
+        
+  </div>
+        
+  <div
+   
+  class="field">
+          
+  <label
+   
+  for="password">Password:</label>
+          
+  <input
+   
+  type="password"
+   
+  id="password"
+   
+  name="password"
+   
+  required>
+        
+  </div>
+        
+  <div
+   
+  class="checkbox">
+          <input type="checkbox" id="rememberMe" name="rememberMe">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <button type="submit">Log In</button>
+        <p class="forgot-password">Forgot your password? <a href="#">Reset it here</a></p>
+      </form>
+    </main>
+    <footer>
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </footer>
+  <p>&copy; 2023 Ade AirBnB. All rights reserved.</p>
+  <script src="https://apis.google.com/js/platform.js"></script>
+</body
+</html>
